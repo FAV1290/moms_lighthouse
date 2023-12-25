@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from moms_lighthouse.views import test_view
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('test/', test_view),
 ]
